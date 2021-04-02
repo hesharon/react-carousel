@@ -1,0 +1,78 @@
+.carousel-main {
+    touch-action: pan-y;
+}
+
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    perspective: 1px;
+    border-radius: 1em;
+}
+
+.carousel-container:hover .move {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+}
+
+.carousel {
+    display: inline-flex;
+    overflow-x: visible;
+    transition-property: transform;
+    will-change: transform;
+    width: 100%;
+    border-radius: 1em;
+}
+
+.slide .Image > img {
+    border-radius: 0;
+}
+
+.move {
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    background-color: rgba(153, 153, 153, 0.5);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0;
+    font-weight: bold;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+}
+
+.back {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+
+.back:focus, .next:focus {
+    outline: none;
+}
+
+.bullets {
+    display: flex;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    margin-top: 15px;
+}
+
+.dot {
+    margin-right: 4px;
+    background: rgba(var(--ba8,168,168,168),1);
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+}
+
+.red-dot {
+    background-color: #e26e5a;
+}
