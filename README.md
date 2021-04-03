@@ -13,9 +13,9 @@ Go ahead and use the code for the carousel and edit it however you need for your
 
 Note: The photos I'm using are just huge to load, that's why there's a split second of a white slide for some images
 
-Desktop demo: https://user-images.githubusercontent.com/36219316/113464331-95326f80-93e0-11eb-85b9-bc8d0490eb14.mov
+Mobile demo: https://user-images.githubusercontent.com/36219316/113464331-95326f80-93e0-11eb-85b9-bc8d0490eb14.mov
 
-Mobile demo: https://user-images.githubusercontent.com/36219316/113464306-716f2980-93e0-11eb-8768-61e88e100358.mov
+Desktop demo: https://user-images.githubusercontent.com/36219316/113464306-716f2980-93e0-11eb-8768-61e88e100358.mov
 
 
 ## How the Carousel works
