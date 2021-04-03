@@ -37,6 +37,7 @@ Going forward
  [3, 1, 2, 3, 1 (current)] ---> [3, 1 (current), 2, 3]
 
 Going backwards
+
 Going backwards is a bit different. If we started off with the array being [1, 2, 3] and current index being 0, there is nothing before Array[0] that we can go to. That is why we started off with the array being [3, 1, 2, 3] and our current index 1.
 
 - If we're at index 0, reset the array so that the first element of the original array is at the end, and the last element of the original array is at the beginning. Set current index to the last index of the original array
