@@ -1,9 +1,9 @@
 # React Carousel
 
-Simple React carousel. 
+Simple React carousel using React Hooks. 
 
 - Lightweight
-- no external libraries
+- No external libraries
 - Responsive
 - Swipable on mobile
 - Has bullet pagination

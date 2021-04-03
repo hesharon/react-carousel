@@ -6,7 +6,6 @@
     overflow: hidden;
     position: relative;
     perspective: 1px;
-    border-radius: 1em;
 }
 
 .carousel-container:hover .move {
@@ -20,7 +19,6 @@
     transition-property: transform;
     will-change: transform;
     width: 100%;
-    border-radius: 1em;
 }
 
 .slide .Image > img {
