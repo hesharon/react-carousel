@@ -7,7 +7,7 @@ Simple React carousel using React Hooks.
 - Responsive
 - Swipable on mobile
 - Has bullet pagination
-- Infinite scrolling, but I laid out the code for no infinite scrolling in components > carousel > index.js if you like
+- Infinite sliding, but the code can be easily edited for finite sliding. Message me if you need help.
 
 Go ahead and use the code for the carousel and edit it however you need for your use case. I put it here for my own purpose and for the community because it took me awhile to create this lightweight custom component. External libraries just contain too many features that I didn't need and makes it hard to work with.
 
