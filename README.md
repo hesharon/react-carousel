@@ -24,6 +24,8 @@ https://user-images.githubusercontent.com/36219316/113464306-716f2980-93e0-11eb-
 - Setting the div with overflow: hidden
 - Creating event listeners (touch and click) that will translate the div in the X axis by (index * imgWidth)
 
+Reference: https://codedaily.io/tutorials/Create-a-Snapping-Image-Swiper-like-Instagram-with-React
+
 ### Infinite Scrolling
 Infinite carousel works on top of the above.
 
@@ -42,3 +44,5 @@ Going backwards is a bit different. If we started off with the array being [1, 2
 
 - If we're at index 0, reset the array so that the first element of the original array is at the end, and the last element of the original array is at the beginning. Set current index to the last index of the original array
 [3 (current), 1, 2, 3] ----> [3, 1, 2, 3 (current), 1]
+
+This is where I learned how to do infinite scrolling from (Read this and then the Github repo attached): https://atomizedobjects.com/blog/react/create-a-react-carousel-using-react-hooks/
