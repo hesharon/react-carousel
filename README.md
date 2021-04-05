@@ -29,12 +29,9 @@ Reference: https://codedaily.io/tutorials/Create-a-Snapping-Image-Swiper-like-In
 ### Infinite Scrolling
 Infinite carousel works on top of the above.
 
-Lets say we have an Array = [1, 2, 3]. Each element is an image. But lets start off the array being [3, 1, 2, 3] and the current index = 1. I'll explain why later.
+Lets say we have an originalArray = [1, 2, 3]. Each element is an image. But lets start off the array being tempArray = [3, 1, 2, 3, 1] and the current index = 1. The last element is appended to the beginning and the first element is appended to the end. It will make sense later.
 
 Going forward
-- If we're at the end of the array of images, place the first image at the end of the array. 
-
-[3, 1, 2, 3 (current)] ----> [3, 1, 2, 3 (current), 1]
 
 - If we're at the extra image at the end of the array (the first image we added to the end of the array), reset the array and the index to 1.
  
@@ -42,10 +39,8 @@ Going forward
 
 Going backwards
 
-Going backwards is a bit different. If we started off with the array being [1, 2, 3] and current index being 0, there is nothing before Array[0] that we can go to. That is why we started off with the array being [3, 1, 2, 3] and our current index 1.
-
-- If we're at index 0, reset the array so that the first element of the original array is at the end, and the last element of the original array is at the beginning. Set current index to the last index of the original array
+- If we're at index 0, set current index to the last index of originalArray
 
 [3 (current), 1, 2, 3] ----> [3, 1, 2, 3 (current), 1]
 
-This is where I learned how to do infinite scrolling from (Read this and then the Github repo attached): https://atomizedobjects.com/blog/react/create-a-react-carousel-using-react-hooks/
+This is where I learned how to do infinite scrolling from. I changed it slightly because I realized their handleTransitionEnd could be optimized, but the fundamentals are the same. (Read this and then the Github repo attached): https://atomizedobjects.com/blog/react/create-a-react-carousel-using-react-hooks/
