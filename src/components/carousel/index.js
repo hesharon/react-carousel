@@ -8,7 +8,7 @@ const Carousel = ({ children, id }) => {
   const [transitionDuration, setTransitionDuration] = useState('')
   const [transitionTimeout, setTransitionTimeout] = useState(null)
   const [imgWidth, setImgWidth] = useState(0)
-  const [images, setImages] = useState([children[children.length - 1], ...children])
+  const [images, setImages] = useState([children[children.length - 1], ...children, children[0]])
   const carouselRef = useRef(null)
 
   useEffect(() => {
@@ -87,14 +87,10 @@ const Carousel = ({ children, id }) => {
   }
 
   const handleTransitionEnd = () => {
-    if (currentIndex === children.length) {
-      setImages([children[children.length - 1], ...children, children[0]])
-    } else if (currentIndex > children.length) {
-      setImages([children[children.length - 1], ...children])
+    if (currentIndex > children.length) {
       setCurrentIndex(1)
       setMovement(1 * imgWidth)
     } else if (currentIndex === 0) {
-      setImages([children[children.length - 1], ...children, children[0]])
       setCurrentIndex(children.length)
       setMovement(children.length * imgWidth)
     }
