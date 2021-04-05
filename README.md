@@ -29,13 +29,13 @@ Reference: https://codedaily.io/tutorials/Create-a-Snapping-Image-Swiper-like-In
 ### Infinite Scrolling
 Infinite carousel works on top of the above.
 
-Lets say we have an originalArray = [1, 2, 3]. Each element is an image. But lets start off the array being tempArray = [3, 1, 2, 3, 1] and the current index = 1. The last element is appended to the beginning and the first element is appended to the end. It will make sense later.
+Lets say we have an originalArray = [1, 2, 3]. Each element is an image. But lets start off the array being tempArray = [3, 1, 2, 3, 1] and the current index = 1. The last element is appended to the beginning and the first element is appended to the end. The purpose is to make the transition from the end to the beginning fluid, giving it the infinite effect. It will make sense later.
 
 Going forward
 
 - If we're at the extra image at the end of the array (the first image we added to the end of the array), reset the array and the index to 1.
  
-[3, 1, 2, 3, 1 (current)] ---> [3, 1 (current), 2, 3]
+[3, 1, 2, 3, 1 (current)] ---> [3, 1 (current), 2, 3, 1]
 
 Going backwards
 
